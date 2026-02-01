@@ -73,3 +73,28 @@
     background: rgba(255, 255, 255, 0.05);
     border-color: rgba(var(--cnvs-themecolor-rgb), 0.4);
 }
+
+/* Lightbox Customization - Close Button Above */
+.mfp-image-holder .mfp-close,
+.mfp-iframe-holder .mfp-close {
+    top: -45px;
+    right: 0;
+    color: #FFF;
+    text-align: center;
+    width: 44px;
+    font-size: 32px;
+    opacity: 1;
+    transition: transform 0.3s ease;
+}
+
+.mfp-image-holder .mfp-close:hover {
+    transform: scale(1.2);
+}
+
+.mfp-content {
+    margin-top: 40px; /* Space for the close button above */
+}
+
+.h-scaling-101:hover {
+    transform: scale(1.03);
+}

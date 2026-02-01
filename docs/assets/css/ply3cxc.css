@@ -13,23 +13,23 @@
  */
 /*{"last_published":"2023-09-12 10:56:23 UTC"}*/
 
-@import url("assets/css/p.typekit.net/p7609.css?s=1&amp;k=ply3cxc&amp;ht=tk&amp;f=10870.10872.10873&amp;a=37850786&amp;app=typekit&amp;e=css");
+@import url("p.typekit.net/p7609.css?s=1&k=ply3cxc&ht=tk&f=10870.10872.10873&a=37850786&app=typekit&e=css");
 
 @font-face {
 font-family:"adonis-web";
-src:url("af/807888/00000000000000000001007d/27/le196?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=n4&amp;v=3") format("woff2"),url("af/807888/00000000000000000001007d/27/de196?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=n4&amp;v=3") format("woff"),url("af/807888/00000000000000000001007d/27/ae196?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=n4&amp;v=3") format("opentype");
+src:url("af/807888/00000000000000000001007d/27/le196?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("af/807888/00000000000000000001007d/27/de196?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("af/807888/00000000000000000001007d/27/ae196?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
 font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
 }
 
 @font-face {
 font-family:"adonis-web";
-src:url("af/0082da/00000000000000000001007f/27/lfdcc?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=i4&amp;v=3") format("woff2"),url("af/0082da/00000000000000000001007f/27/dfdcc?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=i4&amp;v=3") format("woff"),url("af/0082da/00000000000000000001007f/27/afdcc?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=i4&amp;v=3") format("opentype");
+src:url("af/0082da/00000000000000000001007f/27/lfdcc?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("af/0082da/00000000000000000001007f/27/dfdcc?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("af/0082da/00000000000000000001007f/27/afdcc?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
 font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;
 }
 
 @font-face {
 font-family:"adonis-web";
-src:url("af/d99a65/000000000000000000010080/27/l652f?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=n7&amp;v=3") format("woff2"),url("af/d99a65/000000000000000000010080/27/d652f?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=n7&amp;v=3") format("woff"),url("af/d99a65/000000000000000000010080/27/a652f?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=n7&amp;v=3") format("opentype");
+src:url("af/d99a65/000000000000000000010080/27/l652f?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("af/d99a65/000000000000000000010080/27/d652f?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("af/d99a65/000000000000000000010080/27/a652f?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
 font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
 }
 
