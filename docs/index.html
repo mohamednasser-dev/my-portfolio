@@ -22,6 +22,7 @@
 
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Mohamed Nasser | Portfolio</title>
@@ -41,11 +42,15 @@
                     <div class="header-row justify-content-lg-between px-4 px-xl-0">
 
                         <div class="order-1 order-lg-1 text-lg-center p-lg-4 py-3 mt-lg-5">
-                            <img src="assets/images/person-thumb.jpg" alt="Mohamed Nasser"
-                                class="rounded-circle square square-lg mb-lg-3 d-none d-lg-inline-block">
-                            <div class>
-                                <h3 class="mb-0 fw-normal lh-1">Mohamed Nasser</h3>
-                                <p class="mb-0 op-06 fw-light">Senior Software Developer</p>
+                            <div class="d-flex align-items-center justify-content-lg-center">
+                                <img src="assets/images/person-thumb.jpg" alt="Mohamed Nasser"
+                                    class="rounded-circle mobile-profile-thumb d-lg-none">
+                                <img src="assets/images/person-thumb.jpg" alt="Mohamed Nasser"
+                                    class="rounded-circle square square-lg mb-lg-3 d-none d-lg-inline-block">
+                                <div class="text-start text-lg-center">
+                                    <h3 class="mb-0 fw-normal lh-1">Mohamed Nasser</h3>
+                                    <p class="mb-0 op-06 fw-light">Senior Software Developer</p>
+                                </div>
                             </div>
                         </div>
                         <div class="primary-menu-trigger order-3 order-lg-2 ms-auto ms-sm-3">
@@ -85,6 +90,9 @@
                                 <li class="menu-item"><a class="menu-link" href="#" data-href="#section-experience">
                                         <div><i class="bi-person-gear"></i> Experience</div>
                                     </a></li>
+                                <li class="menu-item"><a class="menu-link" href="#" data-href="#section-projects">
+                                        <div><i class="bi-code-slash"></i> Projects</div>
+                                    </a></li>
                                 <li class="menu-item"><a class="menu-link" href="#" data-href="#section-courses">
                                         <div><i class="bi-mortarboard"></i> Courses</div>
                                     </a></li>
@@ -106,7 +114,7 @@
             <div class="content-wrap py-lg-0 pt-0 px-4">
 
                 <div id="section-about" class="page-section py-5 py-lg-6 position-relative">
-                    <div class="skills-bubbles-container d-none d-lg-block">
+                    <div class="skills-bubbles-container">
                         <div class="skill-bubble php" title="PHP"><img src="assets/images/php-logo.png"
                                 alt="PHP"></div>
                         <div class="skill-bubble java" title="Java"><img
@@ -118,14 +126,14 @@
                         <div class="skill-bubble git" title="Git"><img src="assets/images/git-logo.png"
                                 alt="Git"></div>
                     </div>
-                    <div class="container mw-md pt-lg-3">
+                    <div class="container mw-md pt-5 pt-lg-3">
                         <div class="row align-items-center justify-content-between">
                             <div class="col-md-6">
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
+                                <br class="d-none d-md-block">
+                                <br class="d-none d-md-block">
+                                <br class="d-none d-md-block">
+                                <br class="d-none d-md-block">
+                                <br class="d-none d-md-block">
                                 <p class="text-uppercase ls-2 fw-bold color">- BIO</p>
                                 <h2 class="display-2 fw-bolder text-uppercase ls-2">Mohamed Nasser</h2>
                                 <blockquote class="fs-6 border-color">
@@ -134,13 +142,29 @@
                                         in php and 4 years of experience in java. I have the ability to work as a team
                                         member. My main goal is to develop my experience to advance in higher technical
                                         positions and excel in my work in mutually beneficial relationship."</p>
-                                    <footer class="blockquote-footer font-monospace mb-0">Zagazig, El Sharqia, Egypt |
-                                        +201094641332 | mohamedengnasser20@gmail.com
-                                    </footer>
+                                    <div class="bio-contact-details">
+                                        <div class="bio-contact-item">
+                                            <i class="bi-geo-alt-fill me-3"></i>
+                                            <span>Zagazig, El Sharqia, Egypt</span>
+                                        </div>
+                                        <div class="bio-contact-item">
+                                            <i class="bi-telephone-fill me-3"></i>
+                                            <span>+201094641332</span>
+                                        </div>
+                                        <div class="bio-contact-item">
+                                            <i class="bi-envelope-fill me-3"></i>
+                                            <span>mohamedengnasser20@gmail.com</span>
+                                        </div>
+                                    </div>
                                 </blockquote>
                             </div>
                             <div class="col-md-6">
                                 <img src="assets/images/person-2.png" alt="Mohamed Nasser">
+                                <div class="cv-button-container">
+                                    <a href="assets/files/Mohamed Nasser - Senior Software engineer.pdf" target="_blank" class="cv-button">
+                                        <i class="bi-file-earmark-pdf-fill"></i> Download CV
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div class="clear my-5"></div>
@@ -243,10 +267,10 @@
                         <h2 class="text-center display-3 fw-semibold ls-2 mb-5"><i class="bi-person-gear color"></i>
                             Experience</h2>
                         <div class="row justify-content-center text-start">
-                            <div class="col-3">
+                            <div class="col-4 col-lg-3">
                                 <div class="d-flex align-items-center mb-4">
                                     <a href="https://www.linkedin.com/company/alqemam/posts/?feedView=all" target="_blank" class="me-3 h-op-08">
-                                        <img src="assets/images/companies/ELQEMAM.png" alt="Alqemam" style="height: 60px; width: auto;" class="rounded">
+                                        <img src="assets/images/companies/ELQEMAM.png" alt="Alqemam" class="rounded company-logo">
                                     </a>
                                     <div>
                                         <p class="mb-0 small">2021 ─ Present</p>
@@ -254,16 +278,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-9">
+                            <div class="col-8 col-lg-9">
                                 <p><strong>Senior Software Developer (Hybrid, Egypt)</strong><br>
                                     Projects: Learning quran, Qevent app, Qportal, Exas website, Far Learn, CRM, Turath.
                                 </p>
                             </div>
                             <div class="clear"></div>
-                            <div class="col-3">
+                            <div class="col-4 col-lg-3">
                                 <div class="d-flex align-items-center mb-4">
                                     <a href="#" target="_blank" class="me-3 h-op-08">
-                                        <img src="assets/images/companies/ECUBES.ico" alt="eCubes" style="height: 60px; width: auto;" class="rounded">
+                                        <img src="assets/images/companies/ECUBES.ico" alt="eCubes" class="rounded company-logo">
                                     </a>
                                     <div>
                                         <p class="mb-0 small">2020 ─ 2021</p>
@@ -271,16 +295,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-9">
+                            <div class="col-8 col-lg-9">
                                 <p><strong>Software Developer (Remote, Kuwait)</strong><br>
                                     Projects: Medical HMS, Basketball management, Spot social, Nursery portal, Odoo
                                     microservice.</p>
                             </div>
                             <div class="clear"></div>
-                            <div class="col-3">
+                            <div class="col-4 col-lg-3">
                                 <div class="d-flex align-items-center mb-4">
                                     <a href="#" target="_blank" class="me-3 h-op-08">
-                                        <img src="assets/images/companies/DEVNILE.ico" alt="Devnile" style="height: 60px; width: auto;" class="rounded">
+                                        <img src="assets/images/companies/DEVNILE.ico" alt="Devnile" class="rounded company-logo">
                                     </a>
                                     <div>
                                         <p class="mb-0 small">2020 ─ 2021</p>
@@ -288,16 +312,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-9">
+                            <div class="col-8 col-lg-9">
                                 <p><strong>Backend Developer (Remote, Saudi Arabia)</strong><br>
                                     Projects: Dabayih station, Saaf Tourism, Eggs app, MyKom water, Playground
                                     reservation, Parcel.</p>
                             </div>
                             <div class="clear"></div>
-                            <div class="col-3">
+                            <div class="col-4 col-lg-3">
                                 <div class="d-flex align-items-center mb-4">
                                     <a href="#" target="_blank" class="me-3 h-op-08">
-                                        <img src="assets/images/companies/USMART.png" alt="Usmart" style="height: 60px; width: auto;" class="rounded">
+                                        <img src="assets/images/companies/USMART.png" alt="Usmart" class="rounded company-logo">
                                     </a>
                                     <div>
                                         <p class="mb-0 small">2019 ─ 2020</p>
@@ -305,16 +329,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-9">
+                            <div class="col-8 col-lg-9">
                                 <p><strong>Backend Developer (Remote, Saudi Arabia)</strong><br>
                                     Projects: Fixit, Car wash, Cv app, Herage, Onsale, Carsads, Gym/Coaches app, Dalel
                                     app, Mazad, D3aya.</p>
                             </div>
                             <div class="clear"></div>
-                            <div class="col-3">
+                            <div class="col-4 col-lg-3">
                                 <div class="d-flex align-items-center mb-4">
                                     <a href="#" target="_blank" class="me-3 h-op-08">
-                                        <img src="assets/images/companies/ONCLICK.ico" alt="Onclick" style="height: 60px; width: auto;" class="rounded">
+                                        <img src="assets/images/companies/ONCLICK.ico" alt="Onclick" class="rounded company-logo">
                                     </a>
                                     <div>
                                         <p class="mb-0 small">2019 ─ 2020</p>
@@ -322,16 +346,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-9">
+                            <div class="col-8 col-lg-9">
                                 <p><strong>Junior Developer (Remote,Part time , Zagazig)</strong><br>
                                     Projects: Roliess (Finance), Pentola (Delivery), Toycom (E-commerce), Paradise
                                     (Delivery), Car services.</p>
                             </div>
                             <div class="clear"></div>
-                            <div class="col-3">
+                            <div class="col-4 col-lg-3">
                                 <div class="d-flex align-items-center mb-4">
                                     <a href="#" target="_blank" class="me-3 h-op-08">
-                                        <img src="assets/images/companies/BIT.ico" alt="BIT" style="height: 60px; width: auto;" class="rounded">
+                                        <img src="assets/images/companies/BIT.ico" alt="BIT" class="rounded company-logo">
                                     </a>
                                     <div>
                                         <p class="mb-0 small">2019 ─ 2020</p>
@@ -339,7 +363,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-9">
+                            <div class="col-8 col-lg-9">
                                 <p><strong>Junior Developer (On site, Full time , Zagazig)</strong><br>
                                     Projects: Fantasy (kuwait football), open table (restaurant reservation), playstation (E-commerce), my lovera
                                     (E-commerce), Koshk (E-commerce).</p>
@@ -399,6 +423,145 @@
                 </div>
                 <div class="line"></div>
 
+                <div id="section-projects" class="py-lg-5 page-section">
+                    <div class="container mw-md">
+                        <h2 class="text-center display-3 fw-semibold ls-2 mb-5"><i class="bi-code-slash color"></i>
+                            Projects</h2>
+                    </div>
+                    <div class="projects-slider-container">
+                        <div class="projects-slider">
+                            <!-- Standard items -->
+                            <div class="project-slide">
+                                <img src="assets/images/projects/Aljoud.png" alt="Aljoud">
+                            </div>
+                            <div class="project-slide">
+                                <img src="assets/images/projects/carsoq.png" alt="CarSoq">
+                            </div>
+                            <div class="project-slide">
+                                <img src="assets/images/projects/green gold.png" alt="Green Gold">
+                            </div>
+                            <div class="project-slide">
+                                <img src="assets/images/projects/lawyer app.png" alt="Lawyer App">
+                            </div>
+                            <div class="project-slide">
+                                <img src="assets/images/projects/lima & zola.png" alt="Lima & Zola">
+                            </div>
+                            <div class="project-slide">
+                                <img src="assets/images/projects/onsale.png" alt="OnSale">
+                            </div>
+                            <div class="project-slide">
+                                <img src="assets/images/projects/proten chef.png" alt="Proten Chef">
+                            </div>
+                            <!-- Duplicated for infinite loop -->
+                            <div class="project-slide">
+                                <img src="assets/images/projects/Aljoud.png" alt="Aljoud">
+                            </div>
+                            <div class="project-slide">
+                                <img src="assets/images/projects/carsoq.png" alt="CarSoq">
+                            </div>
+                            <div class="project-slide">
+                                <img src="assets/images/projects/green gold.png" alt="Green Gold">
+                            </div>
+                            <div class="project-slide">
+                                <img src="assets/images/projects/lawyer app.png" alt="Lawyer App">
+                            </div>
+                            <div class="project-slide">
+                                <img src="assets/images/projects/lima & zola.png" alt="Lima & Zola">
+                            </div>
+                            <div class="project-slide">
+                                <img src="assets/images/projects/onsale.png" alt="OnSale">
+                            </div>
+                            <div class="project-slide">
+                                <img src="assets/images/projects/proten chef.png" alt="Proten Chef">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view-all-container">
+                        <a href="all-projects.html" class="view-all-btn">View All Projects</a>
+                    </div>
+                </div>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const slider = document.querySelector('.projects-slider');
+                        let isDown = false;
+                        let startX;
+                        let scrollLeft;
+                        let animationPaused = false;
+
+                        slider.addEventListener('mousedown', (e) => {
+                            isDown = true;
+                            slider.classList.add('grabbing');
+                            // Pause the CSS animation
+                            slider.style.animationPlayState = 'paused';
+                            startX = e.pageX - slider.offsetLeft;
+                            scrollLeft = getTranslateX(slider);
+                        });
+
+                        slider.addEventListener('mouseleave', () => {
+                            isDown = false;
+                            slider.classList.remove('grabbing');
+                            if (!slider.matches(':hover')) {
+                                slider.style.animationPlayState = 'running';
+                            }
+                        });
+
+                        slider.addEventListener('mouseup', () => {
+                            isDown = false;
+                            slider.classList.remove('grabbing');
+                            // Resume animation if not hovering or as logic dictates
+                            slider.style.animationPlayState = 'running';
+                        });
+
+                        slider.addEventListener('mousemove', (e) => {
+                            if (!isDown) return;
+                            e.preventDefault();
+                            const x = e.pageX - slider.offsetLeft;
+                            const walk = (x - startX) * 2; 
+                            let newX = scrollLeft + walk;
+                            
+                            // Simple infinite looping logic for manual drag
+                            const halfWidth = slider.offsetWidth / 2;
+                            if (newX > 0) newX = -halfWidth;
+                            if (newX < -halfWidth) newX = 0;
+                            
+                            slider.style.transform = `translateX(${newX}px)`;
+                        });
+
+                        function getTranslateX(el) {
+                            const style = window.getComputedStyle(el);
+                            const matrix = new WebKitCSSMatrix(style.transform);
+                            return matrix.m41;
+                        }
+                        
+                        // Handle touch events for mobile
+                        slider.addEventListener('touchstart', (e) => {
+                            isDown = true;
+                            slider.style.animationPlayState = 'paused';
+                            startX = e.touches[0].pageX - slider.offsetLeft;
+                            scrollLeft = getTranslateX(slider);
+                        });
+
+                        slider.addEventListener('touchend', () => {
+                            isDown = false;
+                            slider.style.animationPlayState = 'running';
+                        });
+
+                        slider.addEventListener('touchmove', (e) => {
+                            if (!isDown) return;
+                            const x = e.touches[0].pageX - slider.offsetLeft;
+                            const walk = (x - startX) * 2;
+                            let newX = scrollLeft + walk;
+                            const halfWidth = slider.offsetWidth / 2;
+                            if (newX > 0) newX = -halfWidth;
+                            if (newX < -halfWidth) newX = 0;
+                            slider.style.transform = `translateX(${newX}px)`;
+                        });
+                    });
+                </script>
+
+                <div class="line"></div>
+
                 <div id="section-courses" class="py-lg-5 page-section">
                     <div class="container mw-md">
                         <h2 class="text-center display-3 fw-semibold ls-2 mb-5 mb-lg-6"><i
@@ -407,8 +570,13 @@
                             <div class="col-md-6">
                                 <div class="card bg-contrast-100 rounded-1 border-0 h-100">
                                     <div class="card-body p-4">
-                                        <h4 class="mb-1">Nodejs</h4>
-                                        <p class="small op-07">2025 - 2026</p>
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <div>
+                                                <h4 class="mb-1">Nodejs</h4>
+                                                <p class="small op-07">2025 - 2026</p>
+                                            </div>
+                                            <i class="devicon-nodejs-plain colored fs-2"></i>
+                                        </div>
                                         <p class="mb-0">Online Course - Making more than 5 projects.</p>
                                     </div>
                                 </div>
@@ -416,8 +584,13 @@
                              <div class="col-md-6">
                                 <div class="card bg-contrast-100 rounded-1 border-0 h-100">
                                     <div class="card-body p-4">
-                                        <h4 class="mb-1">React</h4>
-                                        <p class="small op-07">2025 - 2026</p>
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <div>
+                                                <h4 class="mb-1">React</h4>
+                                                <p class="small op-07">2025 - 2026</p>
+                                            </div>
+                                            <i class="devicon-react-original colored fs-2"></i>
+                                        </div>
                                         <p class="mb-0">Online Course - Making 2 projects.</p>
                                     </div>
                                 </div>
@@ -425,8 +598,13 @@
                             <div class="col-md-6">
                                 <div class="card bg-contrast-100 rounded-1 border-0 h-100">
                                     <div class="card-body p-4">
-                                        <h4 class="mb-1">DevOps</h4>
-                                        <p class="small op-07">2024 - 2025</p>
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <div>
+                                                <h4 class="mb-1">DevOps</h4>
+                                                <p class="small op-07">2024 - 2025</p>
+                                            </div>
+                                            <i class="bi-infinity color fs-2"></i>
+                                        </div>
                                         <p class="mb-0">Senior Steps Center – Nasr City. Making more than 5 projects.
                                         </p>
                                     </div>
@@ -435,8 +613,13 @@
                             <div class="col-md-6">
                                 <div class="card bg-contrast-100 rounded-1 border-0 h-100">
                                     <div class="card-body p-4">
-                                        <h4 class="mb-1">configuration management   </h4>
-                                        <p class="small op-07">2024</p>
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <div>
+                                                <h4 class="mb-1">configuration management   </h4>
+                                                <p class="small op-07">2024</p>
+                                            </div>
+                                            <i class="bi-gear-wide-connected color fs-2"></i>
+                                        </div>
                                         <p class="mb-0">Itida – Online.
                                         </p>
                                     </div>
@@ -445,8 +628,13 @@
                             <div class="col-md-6">
                                 <div class="card bg-contrast-100 rounded-1 border-0 h-100">
                                     <div class="card-body p-4">
-                                        <h4 class="mb-1">PHP Laravel</h4>
-                                        <p class="small op-07">2017 - 2018</p>
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <div>
+                                                <h4 class="mb-1">PHP Laravel</h4>
+                                                <p class="small op-07">2017 - 2018</p>
+                                            </div>
+                                            <i class="devicon-laravel-plain colored fs-2"></i>
+                                        </div>
                                         <p class="mb-0">Senior Steps Center – Nasr City. Making more than 30 projects.
                                         </p>
                                     </div>
@@ -455,8 +643,13 @@
                             <div class="col-md-6">
                                 <div class="card bg-contrast-100 rounded-1 border-0 h-100">
                                     <div class="card-body p-4">
-                                        <h4 class="mb-1">ADF Java</h4>
-                                        <p class="small op-07">2016 - 2017</p>
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <div>
+                                                <h4 class="mb-1">ADF Java</h4>
+                                                <p class="small op-07">2016 - 2017</p>
+                                            </div>
+                                            <i class="devicon-java-plain colored fs-2"></i>
+                                        </div>
                                         <p class="mb-0">Senior Steps Center – Nasr City. Graduation project.</p>
                                     </div>
                                 </div>
@@ -464,8 +657,13 @@
                             <div class="col-md-6">
                                 <div class="card bg-contrast-100 rounded-1 border-0 h-100">
                                     <div class="card-body p-4">
-                                        <h4 class="mb-1">Java SE & EE</h4>
-                                        <p class="small op-07">2015 - 2016</p>
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <div>
+                                                <h4 class="mb-1">Java SE & EE</h4>
+                                                <p class="small op-07">2015 - 2016</p>
+                                            </div>
+                                            <i class="devicon-java-plain colored fs-2"></i>
+                                        </div>
                                         <p class="mb-0">Senior Steps Center – Nasr City. More than 20 Desktop
                                             Applications.</p>
                                     </div>
@@ -474,8 +672,13 @@
                             <div class="col-md-6">
                                 <div class="card bg-contrast-100 rounded-1 border-0 h-100">
                                     <div class="card-body p-4">
-                                        <h4 class="mb-1">C++</h4>
-                                        <p class="small op-07">2015 - 2016</p>
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <div>
+                                                <h4 class="mb-1">C++</h4>
+                                                <p class="small op-07">2015 - 2016</p>
+                                            </div>
+                                            <i class="devicon-cplusplus-plain colored fs-2"></i>
+                                        </div>
                                         <p class="mb-0">University Education Center – Zagazig. More than 20 Desktop
                                             Applications.</p>
                                     </div>

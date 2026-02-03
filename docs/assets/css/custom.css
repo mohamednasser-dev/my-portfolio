@@ -9,6 +9,20 @@
     z-index: 10;
 }
 
+@media (max-width: 991px) {
+    .skills-bubbles-container {
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 250px;
+    }
+    
+    .skill-bubble {
+        width: 45px !important;
+        height: 45px !important;
+    }
+}
+
 .skill-bubble {
     position: absolute;
     width: 55px; /* Slightly larger */
@@ -97,4 +111,255 @@
 
 .h-scaling-101:hover {
     transform: scale(1.03);
+}
+
+/* Projects Slider Section */
+.projects-slider-container {
+    overflow: hidden;
+    padding: 40px 0;
+    position: relative;
+    width: 100%;
+}
+
+.projects-slider {
+    display: flex;
+    width: max-content;
+    animation: slide-projects 30s linear infinite;
+    cursor: grab;
+    user-select: none;
+    will-change: transform;
+}
+
+.projects-slider:active {
+    cursor: grabbing;
+}
+
+.projects-slider:hover {
+    animation-play-state: paused;
+}
+
+.project-slide {
+    flex: 0 0 400px;
+    margin: 0 15px;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.project-slide img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-slide:hover {
+    transform: scale(1.15);
+    z-index: 10;
+    box-shadow: 0 20px 40px rgba(var(--cnvs-themecolor-rgb), 0.3);
+}
+
+@keyframes slide-projects {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.view-all-container {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.view-all-btn {
+    padding: 12px 35px;
+    border: 2px solid var(--cnvs-themecolor);
+    color: var(--cnvs-themecolor) !important;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+}
+
+.view-all-btn:hover {
+    background: var(--cnvs-themecolor);
+    color: #000 !important;
+    box-shadow: 0 10px 20px rgba(var(--cnvs-themecolor-rgb), 0.3);
+    transform: translateY(-3px);
+}
+
+/* Mobile Responsiveness for Skills Bubbles */
+@media (max-width: 991px) {
+    .skills-bubbles-container {
+        position: absolute !important;
+        top: 10px !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 200px !important;
+        z-index: 5;
+    }
+
+    .skill-bubble {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    
+    /* Reposition for mobile scattering - moving higher */
+    .skill-bubble.php { top: 0%; left: 10%; }
+    .skill-bubble.java { top: 25%; left: 45%; }
+    .skill-bubble.nodejs { top: 5%; left: 80%; }
+    .skill-bubble.docker { top: 40%; left: 15%; }
+    .skill-bubble.git { top: 35%; left: 75%; }
+}
+
+/* Mobile Profile Thumb */
+.mobile-profile-thumb {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 2px solid var(--cnvs-themecolor);
+    padding: 2px;
+}
+
+/* Bio Contact Details Styling */
+.bio-contact-details {
+    font-family: 'Outfit', sans-serif;
+    margin-top: 2rem;
+}
+
+.bio-contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    width: 100%;
+    max-width: 450px; /* Optional: keeps it from getting too wide on desktop */
+}
+
+@media (max-width: 575px) {
+    .bio-contact-item {
+        max-width: 100%;
+    }
+}
+
+.bio-contact-item:hover {
+    background: rgba(var(--cnvs-themecolor-rgb), 0.05);
+    border-color: rgba(var(--cnvs-themecolor-rgb), 0.2);
+    transform: translateX(5px);
+}
+
+.bio-contact-item i {
+    color: var(--cnvs-themecolor, #ECA92D);
+    font-size: 1.4rem;
+    width: 30px;
+    text-align: center;
+}
+
+.bio-contact-item span {
+    font-size: 1.15rem;
+    color: #f0f0f0;
+    font-weight: 500;
+    word-break: break-word; /* Prevents overflow for long emails */
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 575px) {
+    .bio-contact-item span {
+        font-size: 1rem; /* Slightly smaller on phones to fit better */
+    }
+}
+
+/* CV Button Styling */
+.cv-button-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.cv-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 15px 35px;
+    background: linear-gradient(135deg, var(--cnvs-themecolor, #ECA92D) 0%, #c18a24 100%);
+    color: #121212 !important;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    text-decoration: none !important;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 20px rgba(var(--cnvs-themecolor-rgb), 0.3);
+    border: none;
+    overflow: hidden;
+}
+
+.cv-button i {
+    font-size: 1.3rem;
+    margin-right: 12px;
+    transition: transform 0.4s ease;
+}
+
+.cv-button:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(var(--cnvs-themecolor-rgb), 0.5);
+    color: #000 !important;
+}
+
+.cv-button:hover i {
+    transform: rotate(-10deg) scale(1.2);
+}
+
+/* Glowing Pulse Animation */
+@keyframes cv-glow {
+    0% { box-shadow: 0 0 0 0 rgba(var(--cnvs-themecolor-rgb), 0.4); }
+    70% { box-shadow: 0 0 0 15px rgba(var(--cnvs-themecolor-rgb), 0); }
+    100% { box-shadow: 0 0 0 0 rgba(var(--cnvs-themecolor-rgb), 0); }
+}
+
+.cv-button {
+    animation: cv-glow 2s infinite;
+}
+
+.cv-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    transition: 0.5s;
+}
+
+.cv-button:hover::before {
+    left: 100%;
+}
+
+/* Company Logo Styling */
+.company-logo {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 991px) {
+    .company-logo {
+        height: 75px !important; /* Larger on mobile for better visibility */
+        margin-bottom: 10px;
+    }
+}
+
+.company-logo:hover {
+    transform: scale(1.1);
 }
