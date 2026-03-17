@@ -660,15 +660,126 @@
 }
 
 .experience-features .feature-box {
-  background: rgba(255, 255, 255, 0.02);
-  padding: 30px;
-  border-radius: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 35px 30px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  display: flex !important;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  margin-bottom: 0 !important;
+}
+
+.experience-features .fbox-icon {
+  position: static !important;
+  width: 40px !important;
+  height: 40px !important;
+  margin-right: 20px !important;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience-features .fbox-icon i {
+  font-size: 32px !important;
+  line-height: 1;
+}
+
+.experience-features .fbox-content {
+  margin-left: 0 !important;
+  flex: 1;
+}
+
+.experience-features .fbox-content h3 {
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 8px !important;
+  color: #fff;
+}
+
+.experience-features .fbox-content p {
+  margin-bottom: 0 !important;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .experience-features .feature-box:hover {
-  background: rgba(var(--cnvs-themecolor-rgb), 0.05);
-  border-color: rgba(var(--cnvs-themecolor-rgb), 0.2);
-  transform: translateY(-5px);
+  background: rgba(var(--cnvs-themecolor-rgb), 0.08);
+  border-color: rgba(var(--cnvs-themecolor-rgb), 0.3);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.experience-features .feature-box:hover .fbox-icon i {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 767px) {
+  .experience-features .feature-box {
+    padding: 20px;
+  }
+  
+  .experience-features .fbox-icon i {
+    font-size: 28px !important;
+  }
+}
+
+/* Custom Coding Cursor */
+body {
+  cursor: none !important;
+}
+
+a, button, [role="button"], .toggle-header, .menu-link, .project-slide, .cv-button, .view-all-btn, .experience-item, .fbox-icon i {
+  cursor: none !important;
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  background-color: var(--cnvs-themecolor);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+}
+
+.custom-cursor-follower {
+  position: fixed;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--cnvs-themecolor);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99998;
+  transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-cursor.active {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.custom-cursor-follower.active {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(var(--cnvs-themecolor-rgb), 0.15);
+  border-color: rgba(var(--cnvs-themecolor-rgb), 0.8);
+}
+@media (max-width: 991px) {
+  body, a, button, [role="button"], .toggle-header, .menu-link, .project-slide, .cv-button, .view-all-btn {
+    cursor: auto !important;
+  }
+  .custom-cursor, .custom-cursor-follower {
+    display: none !important;
+  }
 }

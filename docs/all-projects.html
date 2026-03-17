@@ -132,5 +132,58 @@
 
     <script src="assets/js/plugins.min.js"></script>
     <script src="assets/js/functions.bundle.js"></script>
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cursor = document.querySelector('.custom-cursor');
+            const follower = document.querySelector('.custom-cursor-follower');
+            
+            if (!cursor || !follower) return;
+
+            let mouseX = 0;
+            let mouseY = 0;
+            let cursorX = 0;
+            let cursorY = 0;
+            let followerX = 0;
+            let followerY = 0;
+
+            document.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+            });
+
+            function tick() {
+                // Center dot - fast follow
+                cursorX += (mouseX - cursorX) * 0.4;
+                cursorY += (mouseY - cursorY) * 0.4;
+                cursor.style.left = `${cursorX}px`;
+                cursor.style.top = `${cursorY}px`;
+
+                // Outer circle - trailing effect
+                followerX += (mouseX - followerX) * 0.12;
+                followerY += (mouseY - followerY) * 0.12;
+                follower.style.left = `${followerX}px`;
+                follower.style.top = `${followerY}px`;
+
+                requestAnimationFrame(tick);
+            }
+            tick();
+
+            // Hover effects
+            const links = document.querySelectorAll('a, button, [role="button"], .project-card, .back-btn');
+            links.forEach(link => {
+                link.addEventListener('mouseenter', () => {
+                    cursor.classList.add('active');
+                    follower.classList.add('active');
+                });
+                link.addEventListener('mouseleave', () => {
+                    cursor.classList.remove('active');
+                    follower.classList.remove('active');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
